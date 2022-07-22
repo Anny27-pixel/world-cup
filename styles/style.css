@@ -23,11 +23,25 @@ h1 {
     margin-bottom: 2px;
 }
 
+h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 7%;
+}
+
 p {
     color: white;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 25px;
 
+}
+
+hr {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    opacity: 0.6;
 }
 
 /* top banner styles  */
@@ -232,4 +246,58 @@ span {
     justify-content: center;
     align-items: center;
     margin-left: 5%;
+}
+
+/* footer style  */
+footer {
+    width: 1260px;
+    height: 400px;
+    background: #161616;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-header {
+    margin-left: 45%;
+    margin-top: 10%;
+    padding-top: 80px;
+}
+
+.footer-info {
+    text-decoration: none;
+    color: #B9B9B9;
+}
+
+.footer-content {
+    display: flex;
+    margin-right: 5%;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.footer-content div {
+    padding-left: 35px;
+}
+
+.footer-content div a {
+    font-size: 12px;
+}
+
+.social-medias {
+    display: flex;
+    margin-right: 5%;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 7%;
+
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media {
+    padding-left: 35px;
+    padding-bottom: 5%;
 }
