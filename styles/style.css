@@ -27,6 +27,7 @@ p {
     color: white;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 25px;
+
 }
 
 /* top banner styles  */
@@ -39,35 +40,28 @@ p {
     padding-left: 50px;
 }
 
+@keyframes sliding {
+    from {
+        background-color: rgb(114, 226, 92);
+        left: 0;
+        top: 0;
+    }
+
+    to {
+        background-color: rgb(236, 226, 46);
+        left: 100px;
+        top: 0;
+    }
+}
+
 .half-width img {
     margin-top: 35px;
     height: 500px;
     width: 300px;
+    position: relative;
+    animation: sliding 3s ease 0.7s infinite alternate-reverse;
+    animation-play-state: running;
 
-
-}
-
-@keyframes sliding {
-    0% {
-        background-color: rgb(244, 55, 112);
-        left: 0;
-        top: 0;
-
-    }
-
-
-    50% {
-        background-color: rgb(243, 165, 181);
-        top: 0;
-        transform: scale(1);
-    }
-
-
-    100% {
-        background-color: red;
-        left: 300px;
-        top: 0;
-    }
 }
 
 .button {
@@ -82,12 +76,159 @@ p {
     text-align: center;
     justify-content: center;
     border: hidden;
-    position: relative;
-    animation: sliding 2s ease-in-out 0.5s infinite alternate;
-    animation-play-state: running;
+}
+
+.fa-angle-right {
+    color: white;
+    padding-left: 5%;
+    font-weight: 700;
 }
 
 .link-button {
     text-decoration: none;
     color: white;
+}
+
+/* upcomming match , group and blogs style  */
+.flexible {
+    display: flex;
+    padding-top: 110px;
+    margin-left: 24px;
+    background-color: white;
+}
+
+
+/* fixed div sytle  */
+.fixed {
+    width: 250px;
+    height: 250px;
+    background: #161616;
+    border-radius: 25px;
+    color: white;
+    padding: 15px;
+    margin-left: 60px;
+    margin-right: 5%;
+}
+
+.content {
+    border: 10px solid #161616;
+    background-color: #161616;
+    color: black;
+    padding: 10px 15px;
+    width: 200px;
+    height: 210px;
+
+}
+
+.content div {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+#red-colr {
+    background-color: red;
+    color: white;
+}
+
+/* non fixed div  */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.blog {
+    width: 220px;
+    border: 1px solid rgb(155, 149, 149);
+    padding-left: 10px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+
+}
+
+.blog-img {
+    height: 104px;
+    width: 220px;
+
+}
+
+.blog-details a {
+    border: 1px solid grey;
+    text-decoration: none;
+    margin-left: 5%;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
+
+.black-clr {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    color: black;
+    margin-left: 5%;
+}
+
+.blog-info {
+    width: 143px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    padding-left: 5%;
+}
+
+.blog-duration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.icon-img {
+    width: 24px;
+    height: 24px;
+
+    top: 30px;
+}
+
+span {
+    width: 19px;
+    height: 26px;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-left: 5%;
+}
+
+.blog-message {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
 }
