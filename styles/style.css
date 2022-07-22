@@ -1,0 +1,93 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* common styles  */
+.container {
+    background-color: black;
+    width: 870px;
+    margin-top: 21px;
+    border-radius: 25px;
+    padding: 0 25px;
+    margin-left: 120px;
+    padding-right: 100px;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+}
+
+/* top banner styles  */
+.top-banner {
+    display: flex;
+
+}
+
+.banner-detail {
+    padding-left: 50px;
+}
+
+.half-width img {
+    margin-top: 35px;
+    height: 500px;
+    width: 300px;
+
+
+}
+
+@keyframes sliding {
+    0% {
+        background-color: rgb(244, 55, 112);
+        left: 0;
+        top: 0;
+
+    }
+
+
+    50% {
+        background-color: rgb(243, 165, 181);
+        top: 0;
+        transform: scale(1);
+    }
+
+
+    100% {
+        background-color: red;
+        left: 300px;
+        top: 0;
+    }
+}
+
+.button {
+    text-decoration: none;
+    background-color: #DD0000;
+    width: 120px;
+    padding: 10px 20px;
+    margin-bottom: 60px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    border: hidden;
+    position: relative;
+    animation: sliding 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
+
+.link-button {
+    text-decoration: none;
+    color: white;
+}
