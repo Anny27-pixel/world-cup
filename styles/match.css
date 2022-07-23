@@ -1,0 +1,218 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* common styles  */
+.container {
+    background-color: black;
+    width: 870px;
+    margin-top: 21px;
+    border-radius: 25px;
+    padding: 0 25px;
+    margin-left: 120px;
+    padding-right: 100px;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 7%;
+}
+
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+
+}
+
+hr {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    opacity: 0.6;
+}
+
+/* top banner styles  */
+.top-banner {
+    display: flex;
+
+}
+
+.banner-detail {
+    padding-left: 50px;
+}
+
+@keyframes sliding {
+    from {
+        background-color: rgb(114, 226, 92);
+        left: 0;
+        top: 0;
+    }
+
+    to {
+        background-color: rgb(236, 226, 46);
+        left: 100px;
+        top: 0;
+    }
+}
+
+.half-width img {
+    margin-top: 35px;
+    height: 500px;
+    width: 300px;
+    position: relative;
+    animation: sliding 3s ease 0.7s infinite alternate-reverse;
+    animation-play-state: running;
+
+}
+
+.button {
+    text-decoration: none;
+    background-color: #DD0000;
+    width: 120px;
+    padding: 10px 20px;
+    margin-bottom: 60px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    border: hidden;
+}
+
+.fa-angle-right {
+    color: white;
+    padding-left: 5%;
+    font-weight: 700;
+}
+
+.link-button {
+    text-decoration: none;
+    color: white;
+}
+
+/* upcomming match , group and blogs style  */
+.flexible {
+    display: flex;
+    padding-top: 110px;
+    margin-left: 24px;
+    background-color: white;
+}
+
+
+/* fixed div sytle  */
+.fixed {
+    width: 250px;
+    height: 250px;
+    background: #161616;
+    border-radius: 25px;
+    color: white;
+    padding: 15px;
+    margin-left: 60px;
+    margin-right: 5%;
+}
+
+.content {
+    border: 10px solid #161616;
+    background-color: #161616;
+    color: black;
+    padding: 10px 15px;
+    width: 200px;
+    height: 210px;
+
+}
+
+.content div {
+    width: 200px;
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px 4px;
+    text-align: center;
+}
+
+.content div a {
+    text-decoration: none;
+    color: black;
+}
+
+#red-colr {
+    background-color: red;
+    color: white;
+}
+
+#red-colr a {
+    color: white;
+}
+
+
+/* footer style  */
+footer {
+    width: 1260px;
+    height: 400px;
+    background: #161616;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-header {
+    margin-left: 45%;
+    margin-top: 10%;
+    padding-top: 80px;
+}
+
+.footer-info {
+    text-decoration: none;
+    color: #B9B9B9;
+}
+
+.footer-content {
+    display: flex;
+    margin-right: 5%;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.footer-content div {
+    padding-left: 35px;
+}
+
+.footer-content div a {
+    font-size: 12px;
+}
+
+.social-medias {
+    display: flex;
+    margin-right: 5%;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 7%;
+
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media {
+    padding-left: 35px;
+    padding-bottom: 5%;
+}
