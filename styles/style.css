@@ -148,6 +148,15 @@ hr {
     text-align: center;
 }
 
+.content div a {
+    text-decoration: none;
+    color: black;
+}
+
+#red-colr a {
+    color: white;
+}
+
 #red-colr {
     background-color: red;
     color: white;

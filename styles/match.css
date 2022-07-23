@@ -30,6 +30,12 @@ h2 {
     margin-top: 7%;
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
 p {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -148,20 +154,58 @@ hr {
     text-align: center;
 }
 
-.content div a {
-    text-decoration: none;
-    color: black;
-}
+
 
 #red-colr {
     background-color: red;
     color: white;
 }
 
-#red-colr a {
-    color: white;
+/* non fixed div  */
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
 }
 
+.match {
+    width: 210px;
+    height: 200px;
+    border: 1px solid rgb(155, 149, 149);
+    padding-left: 10px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.match-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flag-img {
+    height: 70px;
+    width: 90px;
+}
+
+.vs {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.match-detail {
+    text-align: center;
+}
+
+.match-detail span {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.7;
+}
 
 /* footer style  */
 footer {
